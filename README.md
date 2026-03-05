@@ -1,4 +1,4 @@
-This project implements an end-to-end deep learning pipeline for classifying lung adenocarcinoma (LUAD) and lung squamous cell carcinoma (LUSC) from H&E-stained whole-slide images (WSIs) using the TransMIL framework. The project focuses on weakly supervised slide-level classification using patch-based representations.
+This project implements an end-to-end deep learning pipeline for classifying lung adenocarcinoma (LUAD) and lung squamous cell carcinoma (LUSC) from H&E-stained whole-slide images (WSIs) using the TransMIL framework. The project focuses on weakly supervised slide-level classification using patch-based representations. Additional visualization methods for the transformer-based model are implemented in create_heatmaps.py.
 
 Two different feature extraction approaches were evaluated:
 ResNet-50 (CNN-based encoder)
@@ -28,6 +28,7 @@ python train.py --stage='train' --config='Camelyon/TransMIL.yaml'  --gpus=0 --fo
 ```python
 python train.py --stage='test' --config='Camelyon/TransMIL.yaml'  --gpus=0 --fold=0
 ```
+
 
 
 
